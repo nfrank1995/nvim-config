@@ -5,9 +5,7 @@ local map = vim.api.nvim_set_keymap
 -- map('i', 'jk', '', {})
 
 -- Toggle nvim-tree
-map('n', 'n', '<cmd>NvimTreeToggle<CR>', {})
+map('n', 'n', '<cmd>NvimTreeToggle<CR>', {}) 
+
 -- Toggle Telescope
 map('n', 'ff', '<cmd>Telescope find_files<CR>', {})
-
--- LSP-Zero
-
