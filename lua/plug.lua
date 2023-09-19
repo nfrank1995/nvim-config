@@ -35,6 +35,10 @@ local plugins = function(use)
   use { 'tpope/vim-commentary' }
   use { 'tpope/vim-surround' }
 
+  use{ 'mfussenegger/nvim-dap'}
+  use{ 'leoluz/nvim-dap-go' }
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v2.x',
@@ -49,8 +53,7 @@ local plugins = function(use)
       {'hrsh7th/cmp-nvim-lsp'}, -- Required
       {'L3MON4D3/LuaSnip'},     -- Required
     }
-  }
-  end
+}end
 
 
 
